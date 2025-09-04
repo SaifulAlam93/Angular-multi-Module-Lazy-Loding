@@ -1,0 +1,19 @@
+<div class="d-flex align-items-center justify-content-between mb-3">
+  <h4 class="mb-0">Courses</h4>
+  <input class="form-control" style="max-width:260px" placeholder="Search courses">
+</div>
+
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Angular Fundamentals
+    <a class="btn btn-sm btn-outline-primary" [routerLink]="['/dashboard/courses', 101]">Open</a>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    RxJS Essentials
+    <a class="btn btn-sm btn-outline-primary" [routerLink]="['/dashboard/courses', 102]">Open</a>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    NgRx Quickstart
+    <a class="btn btn-sm btn-outline-primary" [routerLink]="['/dashboard/courses', 103]">Open</a>
+  </li>
+</ul>

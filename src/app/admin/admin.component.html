@@ -1,0 +1,16 @@
+<div class="d-flex">
+  <!-- Sidebar -->
+  <nav class="d-flex flex-column bg-dark text-white p-3" style="width: 220px; min-height: 100vh;">
+    <h4 class="text-center mb-4">⚙️ Admin Panel</h4>
+    <a class="nav-link text-white mb-2" routerLink="users" routerLinkActive="fw-bold text-warning">👥 Users</a>
+    <a class="nav-link text-white mb-2" routerLink="reports" routerLinkActive="fw-bold text-warning">📊 Reports</a>
+    <a class="nav-link text-white mb-2" routerLink="/dashboard" routerLinkActive="fw-bold text-warning"> Dashboard</a>
+    <hr />
+    <a class="nav-link text-danger mt-auto" routerLink="/auth/login">🚪 Logout</a>
+  </nav>
+
+  <!-- Main content -->
+  <div class="flex-grow-1 p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
