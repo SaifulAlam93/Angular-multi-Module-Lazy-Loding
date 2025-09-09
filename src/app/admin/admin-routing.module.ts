@@ -4,6 +4,7 @@ import { AdminComponent } from './admin.component';
 import { ReportsComponent } from './reports/reports.component';
 import { UsersComponent } from './users/users.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
+import { PipreExComponent } from './pipre-ex/pipre-ex.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,8 @@ const routes: Routes = [
       { path: 'users', component: UsersComponent },
       { path: 'reports', component: ReportsComponent },
       { path: 'layout', component: AdminLayoutComponent },
+      { path: 'pipe', component: PipreExComponent },
+
       { path: '', redirectTo: 'users', pathMatch: 'full' },
     ],
   },
