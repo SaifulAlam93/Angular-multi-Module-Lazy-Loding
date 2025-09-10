@@ -9,9 +9,9 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
-products: Product[] = [];
+  products: Product[] = [];
 
-  constructor(private productService: ProductService, private router: Router) {}
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe(data => this.products = data);

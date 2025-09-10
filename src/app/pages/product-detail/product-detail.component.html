@@ -3,5 +3,5 @@
   <h2>{{ product.name }}</h2>
   <p>{{ product.description }}</p>
   <h3>${{ product.price }}</h3>
-  <button routerLink="/products">Back to Products</button>
+  <button routerLink="/products">Back to Products</button><button (click)="editProduct(product)">Edit Products</button>
 </div>
